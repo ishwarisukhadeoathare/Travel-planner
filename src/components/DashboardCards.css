@@ -1,0 +1,299 @@
+.dashboard-cards-row {
+    display: flex;
+    gap: 24px;
+    justify-content: center;
+    align-items: flex-start;
+    width: 100%;
+    flex-wrap: wrap;
+  }
+  
+  .dashboard-card {
+    width: 375px;
+    min-height: 700px;
+    border-radius: 24px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.10);
+    margin-bottom: 24px;
+  }
+  
+  .dashboard-card.dark {
+    background: linear-gradient(180deg, #181920 0%, #111115 100%);
+    color: #fff;
+  }
+  
+  .dashboard-card.dark2 {
+    background: linear-gradient(180deg, #1a1d23 0%, #16171c 100%);
+    color: #fff;
+  }
+  
+  .dashboard-card.light {
+    background: linear-gradient(180deg, #fff 0%, #f7f8ff 100%);
+    color: #222;
+    border: 1px solid #e6e6ef;
+  }
+  
+  .dashboard-header {
+    padding: 18px 20px 0 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+  }
+  
+  .dashboard-title {
+    font-size: 13px;
+    opacity: 0.7;
+    margin-bottom: 8px;
+  }
+  
+  .dashboard-statusbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 15px;
+    opacity: 0.85;
+  }
+  
+  .dashboard-icons span {
+    margin-left: 6px;
+  }
+  
+  .dashboard-content {
+    padding: 0 20px 20px 20px;
+    flex: 1;
+  }
+  
+  .dashboard-greet {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 12px;
+    margin-bottom: 16px;
+  }
+  
+  .dashboard-greet span {
+    font-size: 19px;
+    font-weight: 600;
+  }
+  
+  .dashboard-ready {
+    font-size: 13px;
+    font-weight: 400;
+    margin-left: 8px;
+    opacity: 0.7;
+  }
+  
+  .dashboard-avatar {
+    width: 34px;
+    height: 34px;
+    background: #ff9800;
+    color: #fff;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 700;
+    font-size: 17px;
+    margin-left: 8px;
+  }
+  
+  .dashboard-section {
+    margin-bottom: 18px;
+  }
+  
+  .dashboard-section-title {
+    font-size: 15px;
+    font-weight: 500;
+    margin-bottom: 8px;
+    display: block;
+  }
+  
+  .dashboard-trip-card {
+    position: relative;
+    border-radius: 16px;
+    overflow: hidden;
+    margin-bottom: 8px;
+    background: #222;
+    display: flex;
+    align-items: flex-end;
+    min-height: 140px;
+  }
+  
+  .dashboard-card.light .dashboard-trip-card {
+    background: #eaeaff;
+  }
+  
+  .dashboard-trip-img {
+    width: 100%;
+    height: 140px;
+    object-fit: cover;
+    position: absolute;
+    top: 0; left: 0;
+    z-index: 1;
+    opacity: 0.8;
+  }
+  
+  .dashboard-trip-info {
+    position: relative;
+    z-index: 2;
+    padding: 16px;
+    color: #fff;
+    width: 100%;
+  }
+  
+  .dashboard-card.light .dashboard-trip-info {
+    color: #222;
+  }
+  
+  .dashboard-trip-city {
+    font-size: 26px;
+    font-weight: 700;
+    letter-spacing: 2px;
+  }
+  
+  .dashboard-trip-date {
+    font-size: 13px;
+    margin-top: 2px;
+    opacity: 0.85;
+    display: block;
+  }
+  
+  .dashboard-trip-meta {
+    display: flex;
+    gap: 14px;
+    margin-top: 10px;
+    font-size: 13px;
+    opacity: 0.95;
+  }
+  
+  .dashboard-flight-card {
+    background: #3b3efd;
+    color: #fff;
+    border-radius: 12px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 14px 18px;
+    margin-top: 6px;
+  }
+  
+  .dashboard-card.light .dashboard-flight-card {
+    background: #eaeaff;
+    color: #222;
+  }
+  
+  .dashboard-flight-route {
+    font-size: 16px;
+    font-weight: 600;
+  }
+  
+  .dashboard-flight-time {
+    font-size: 13px;
+    display: block;
+    margin-top: 2px;
+  }
+  
+  .dashboard-flight-plane {
+    font-size: 26px;
+  }
+  
+  .dashboard-hotels {
+    display: flex;
+    gap: 12px;
+    margin-top: 6px;
+  }
+  
+  .dashboard-hotel-card {
+    background: rgba(255,255,255,0.08);
+    border-radius: 10px;
+    overflow: hidden;
+    min-width: 120px;
+    max-width: 140px;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  
+  .dashboard-card.light .dashboard-hotel-card {
+    background: #fff;
+    border: 1px solid #eaeaff;
+  }
+  
+  .dashboard-hotel-img {
+    width: 100%;
+    height: 62px;
+    object-fit: cover;
+  }
+  
+  .dashboard-hotel-info {
+    padding: 8px 8px 6px 8px;
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+  }
+  
+  .dashboard-hotel-name {
+    font-size: 13px;
+    font-weight: 600;
+  }
+  
+  .dashboard-hotel-nights {
+    font-size: 12px;
+    opacity: 0.7;
+  }
+  
+  .dashboard-hotel-status {
+    font-size: 11px;
+    font-weight: 500;
+    margin-top: 3px;
+    border-radius: 6px;
+    padding: 2px 8px;
+    display: inline-block;
+  }
+  
+  .dashboard-hotel-status.confirmed {
+    background: #e0ffe5;
+    color: #0a7f4c;
+  }
+  
+  .dashboard-hotel-status.pending {
+    background: #fff5e0;
+    color: #a87f0a;
+  }
+  
+  .dashboard-bottom-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 14px 32px;
+    background: rgba(34,34,34,0.98);
+    border-top-left-radius: 18px;
+    border-top-right-radius: 18px;
+    margin-top: auto;
+  }
+  
+  .dashboard-card.light .dashboard-bottom-nav {
+    background: #f7f8ff;
+  }
+  
+  .dashboard-nav-item {
+    font-size: 22px;
+    opacity: 0.7;
+    cursor: pointer;
+    transition: opacity 0.2s;
+  }
+  
+  .dashboard-nav-item.active {
+    color: #4b56d2;
+    opacity: 1;
+  }
+  
+  @media (max-width: 1200px) {
+    .dashboard-cards-row {
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+  

@@ -1,0 +1,136 @@
+/* src/components/ActivityTicket.css */
+.activity-ticket {
+    background: #292929;
+    color: #f5f5f5;
+    border-radius: 8px;
+    padding: 8px;
+    margin-top: 8px;
+  }
+  
+  .ticket-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 8px;
+  }
+  
+  .ticket-title {
+    font-size: 16px;
+    font-weight: bold;
+    color: #d3f462;
+  }
+  
+  .ticket-activities {
+    font-size: 14px;
+  }
+  
+  .ticket-dates {
+    display: flex;
+    overflow-x: auto;
+    margin-bottom: 12px;
+  }
+  
+  .date {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: #333;
+    margin-right: 4px;
+    cursor: pointer;
+  }
+  
+  .date.active {
+    background: #d3f462;
+    color: black;
+  }
+  
+  .date .day {
+    font-size: 12px;
+  }
+  
+  .date .number {
+    font-size: 14px;
+    font-weight: bold;
+  }
+  
+  .ticket-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 8px;
+  }
+  
+  .ticket-section-title {
+    font-size: 14px;
+    font-weight: bold;
+  }
+  
+  .ticket-activities-count {
+    font-size: 12px;
+    color: #d3f462;
+  }
+  
+  .ticket-activity-card {
+    display: flex;
+    margin-bottom: 8px;
+  }
+  
+  .activity-image {
+    width: 60px;
+    height: 60px;
+    border-radius: 4px;
+    background: url('https://via.placeholder.com/60'); /* Replace with your image URL */
+    background-size: cover;
+    margin-right: 8px;
+  }
+  
+  .activity-image.tokyo-sky {
+    background: url('https://via.placeholder.com/60'); /* Replace with your image URL */
+    background-size: cover;
+  }
+  
+  .activity-image.kimono {
+    background: url('https://via.placeholder.com/60'); /* Replace with your image URL */
+    background-size: cover;
+  }
+  
+  .activity-info {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .activity-name {
+    font-size: 14px;
+    font-weight: bold;
+    margin-bottom: 4px;
+  }
+  
+  .activity-time {
+    font-size: 12px;
+    color: #d3f462;
+    margin-bottom: 4px;
+  }
+  
+  .activity-duration {
+    font-size: 12px;
+    margin-bottom: 4px;
+  }
+  
+  .activity-pickup {
+    font-size: 12px;
+  }
+  
+  .ticket-footer {
+    text-align: right;
+  }
+  
+  .ticket-see-all {
+    font-size: 14px;
+    color: #d3f462;
+    cursor: pointer;
+  }
+  
